@@ -5,7 +5,7 @@ The Official Factorio SDK for BackSeatGamer Integration
 Integration will only work if this mod is run on a server. You should never attempt to run two instances of Factorio on your machine if both instances are installed, and write save/mod data to the same location.
 This is a surefire way to get file corruption.
 
-To get around this, download the Windows .zip version if you are running Windows. You can think of the server as a containerized version this way. If you run the executabe (located under `bin/x64`) and the executable is an installer, you have downloaded the wrong thing. It should launch an instance of Factorio on run.
+To get around this, download the Windows .zip version if you are running Windows. You can think of the server as a containerized version this way. If you run the executable (located under `bin/x64`) and the executable is an installer, you have downloaded the wrong thing. It should launch an instance of Factorio on run.
 
 **IMPORTANT FOR STEAM USERS**: You can click the `Log In` link, and then the button to log in with Steam. This will allow you to download another copy without having to pay again.
 
@@ -35,7 +35,7 @@ You will not be able to connect to the server unless your mods folder is an exac
 
 Copy the Factorio SDK folder to the mods folder of whichever instance you decide to work in (feel free to fork the repo and clone the instance to this location). 
 
-Once coppied, open the directory and edit the `info.json` file. Feel free to edit any attribute in this file, and make the mod your own (no credit is nessisary). The important thing to note is that the name needs to be lowercase, and spaces should be replaced with dash (`-`) characters. The name of the folder of your mod will need to reflect these changes. It must be in the foramt `[name]_[version]`. For example, the default name and version is `bsg-example-mod`, and `0.0.1`, respectivley, so the directory name will become `bsg-example-mod_0.0.1`.
+Once copped, open the directory and edit the `info.json` file. Feel free to edit any attribute in this file, and make the mod your own (no credit is necessary). The important thing to note is that the name needs to be lowercase, and spaces should be replaced with dash (`-`) characters. The name of the folder of your mod will need to reflect these changes. It must be in the format `[name]_[version]`. For example, the default name and version is `bsg-example-mod`, and `0.0.1`, respectively, so the directory name will become `bsg-example-mod_0.0.1`.
 
 Finally, the mod thumbnail (`thumbnail.png`) is the BackSeatGamer race car logo by default. Feel free to replace this with your own image.
 
@@ -57,7 +57,7 @@ This code will create a new Factorio command called `spawn_biter`, which can be 
 
 When setting up this reward on the BackSeatGamer server, simply make the command `spawn_biter`, and when the reward is redeemed, BackSeatGamer will execute the Factorio command `/spawn_biter` which will spawn the biter.
 
-The `commands.add_command` takes three arguements. The first is the name of the command which is used to invoke it. If this were `test`, then to execute it, we would need to issue the console command `/test` in game. The second arguement is to provide help text for the command (displayed when the player issues `/h spawn_biter`). The final arguement is the name of the function to execute when the command is run. If in the first line, I had named the function `my_func`, then this arguement would need to be `my_func` instead (**NOTE**: Do not surround the last arguement with quotes). Best practice is to define each of your functions first, and then keep all of the `commands.add_command` statements at the end of the file.
+The `commands.add_command` takes three arguments. The first is the name of the command which is used to invoke it. If this were `test`, then to execute it, we would need to issue the console command `/test` in game. The second argument is to provide help text for the command (displayed when the player issues `/h spawn_biter`). The final argument is the name of the function to execute when the command is run. If in the first line, I had named the function `my_func`, then this argument would need to be `my_func` instead (**NOTE**: Do not surround the last argument with quotes). Best practice is to define each of your functions first, and then keep all of the `commands.add_command` statements at the end of the file.
 
 To test lua commands in game, you can simply issue the console command `/c [lua code]`. Technically, you could create a reward with this value and the lua code would be executed, however, this is not advised due to the character limit of reward commands.
 
@@ -67,4 +67,4 @@ To test lua commands in game, you can simply issue the console command `/c [lua 
 - https://discord.gg/factorio
 
 ## Issues/Feedback
-If you encounter any problems, or have suggestions for future updates, feel free to leave them over in the [Issue Tracker](https://github.com/BackSeatGamerCode/OpenRCT2SDK/issues). Alternatively, if you have questions or want to discuss something with your fellow OpenRCT2 modders, then check out our [Discussions](https://github.com/BackSeatGamerCode/OpenRCT2SDK/discussions). Thank you for using OpenRCT2 modding SDK, and good luck with your mod!
+If you encounter any problems, or have suggestions for future updates, feel free to leave them over in the [Issue Tracker](https://github.com/BackSeatGamerCode/FactorioSDK/issues). Alternatively, if you have questions or want to discuss something with your fellow OpenRCT2 modders, then check out our [Discussions](https://github.com/BackSeatGamerCode/FactorioSDK/discussions). Thank you for using OpenRCT2 modding SDK, and good luck with your mod!
