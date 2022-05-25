@@ -1,0 +1,10 @@
+{
+   "name": "bsg-example-mod",
+   "version": "0.0.1",
+   "title": "BackSeatGamer Example Mod",
+   "author": "BackSeatGamer Services, CPSuperstore",
+   "factorio_version": "1.1",
+   "dependencies": [],
+   "homepage": "https://backseatgamer.pythonanywhere.com/",
+   "description": "This is the template mod for integrating with BSG. Feel free to change anything in this template, including anything in the info.json file, and the thumbnail."
+}
