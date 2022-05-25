@@ -2,6 +2,8 @@
 The Official Factorio SDK for BackSeatGamer Integration 
 
 ## Setup
+This SDK requires [BackSeatGamer Reverse Proxy](https://github.com/BackSeatGamerCode/ReverseProxy) to be running in `RCON Broadcast` Mode. The selected format makes no difference. By default, port 29175 will be used. In the future, we plan on adding a way for the user to change this if necessary.
+
 Integration will only work if this mod is run on a server. You should never attempt to run two instances of Factorio on your machine if both instances are installed, and write save/mod data to the same location.
 This is a surefire way to get file corruption.
 
